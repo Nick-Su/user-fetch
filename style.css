@@ -1,0 +1,143 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Arial;
+}
+
+.main-menu__tab {
+  display: flex;
+  justify-content: center;
+  background-color: #f1f1f1;
+}
+
+.main-menu__tab  button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+.main-menu__tab  button:hover {
+  background-color: #ddd;
+}
+
+.main-menu__tab  button.active {
+  background-color: #ccc;
+}
+
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+} 
+
+.user-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+}
+
+.current-user__user-info {
+  margin-top: 1em;
+}
+
+.current-user__user-info p {
+  padding-left: 2em;
+}
+
+.current-user__name {
+  cursor: pointer;
+  padding: 0.5em 0 .5em 0;
+  background-color: #ddd;
+}
+
+.current-user__description {
+  min-height: 5em;
+  display: none;
+  border: 1px solid green;
+}
+
+.user-albums__album-title {
+  padding: .5em;
+  cursor: pointer;
+  background-color:bisque
+}
+
+.album-photo__photo-container {
+  margin-top: 1em;
+}
+
+.album-photo__img-container {
+  display: flex;
+  justify-content: center;
+}
+
+.album-photo__star i {
+  align-items: center;
+  padding: 2em 1em 0 0;
+  cursor: pointer;
+}
+
+.album-photo__thumbnail {
+  width: 150px;
+  height: 150px;
+}
+
+/* Image show title on hover*/
+.album-photo__thumbnail div {
+  position: absolute;
+  left: 60%;
+  margin-top: -5em;;
+  background: black;
+  color: white;
+  visibility: hidden;
+  -webkit-transition: visibility 0s, opacity 0.5s linear; 
+  transition: visibility 0s, opacity 0.5s linear;
+}
+
+.album-photo__thumbnail img:hover {
+  cursor: pointer;
+}
+
+.album-photo__thumbnail:hover div { 
+  width: 150px;
+  padding: 8px 15px;
+  visibility: visible;
+  opacity: 0.7; 
+}  
+
+.full-image__image-container {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.full-image__image-container img {
+    background-color: #fefefe;
+    margin: 10% 0 0 30%;
+    width: 600px;
+}
+
+.selected {
+  color: yellow;
+}
+
+ /* Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 96px;
+  font-weight: bold;
+  padding: .5em .5em 0 0;
+  cursor: pointer;
+}

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <title>Users</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <body>
+    <div class="full-image">
+      <div class="full-image__image-container"></div>
+    </div>
+    <div class="main-menu">
+      <div class="main-menu__tab">
+        <button class="main-menu__tablinks active" onclick="openTab(event, 'catalog')">Каталог</button>
+        <button class="main-menu__tablinks" onclick="openTab(event, 'favorites')">Избранное</button>
+      </div>
+    </div>
+    <div class="content">
+      <div id="catalog" class="content__tabcontent"></div>
+      <div id="favorites" class="content__tabcontent"></div>
+    </div>
+    
+    <script src="./script.js"></script>
+  </body>
+</html>
